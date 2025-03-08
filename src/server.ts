@@ -22,7 +22,7 @@ app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
 
 app.register(fastifyCors, {
-  origin: true,
+  origin: env.CORS_ORIGIN,
 })
 
 app.register(fastifySwagger, {
