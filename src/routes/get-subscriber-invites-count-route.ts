@@ -5,7 +5,7 @@ import { getSubscriberInvitesCount } from '../functions/get-subscriber-invites-c
 export const getSubscriberInvitesCountRoute: FastifyPluginAsyncZod =
   async app => {
     app.get(
-      '/subscriber/:subscriberId/ranking/count',
+      '/subscribers/:subscriberId/ranking/count',
       {
         schema: {
           summary: 'Get subscriber invites count',
